@@ -1,4 +1,3 @@
-let timestamp = require('./creatTimestamp.js')();
 module.exports = function (state,body,message,errorCode) {
     return {
         state,
