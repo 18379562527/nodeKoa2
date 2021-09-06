@@ -9,9 +9,9 @@ router.post('/',async(ctx)=>{
     console.log('response',ctx.response)
     console.log('ctx.request.body',ctx.request.body)
     console.log('ctx.request.body',ctx.request.body.role)
-    if(ctx.request.body.role === 'admin'){
+    if(ctx.request.body.role === 'superAdmin'){
         ctx.body = setbackData(1,superAdmin,'调用成功');
-    }else if(ctx.request.body.role === 'member'){
+    }else if(ctx.request.body.role === 'admin'){
         ctx.body = setbackData(1,admin,'调用成功');
     }else{
         ctx.body = setbackData(1, visitor,'调用成功','调用成功');
